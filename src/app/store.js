@@ -1,8 +1,9 @@
-import dftexpreducer from '../features/user/userSlice.js';
+import {dataReducer} from '../features/data/dataSlice.js'
+import { configureStore } from '@reduxjs/toolkit'; 
 const store = configureStore(
     {
         reducer:
         {
-            user: dftexpreducer,
-        },});
+            data: dataReducer
+        }});
 export default store;
